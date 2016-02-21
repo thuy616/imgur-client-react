@@ -1,0 +1,100 @@
+.header .active {
+  font-weight: 900; }
+
+.navbar-default {
+  background-color: rgba(108, 122, 137, 0.3);
+  border-color: rgba(108, 122, 137, 0.9); }
+
+.navbar-default .navbar-brand {
+  color: #42dca3; }
+
+.navbar-default .navbar-brand:hover {
+  color: #ECF0F1;
+  background-color: #42dca3; }
+
+.navbar-default .navbar-nav > li > a {
+  color: #42dca3; }
+
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+  color: #ECF0F1;
+  background-color: #42dca3; }
+
+.image-detail .panel-body {
+  text-align: center;
+  background-color: black; }
+
+.image-detail img, .image-detail video {
+  max-width: 100%; }
+
+.image-detail .badge {
+  background-color: #19B5FE; }
+
+.image-detail .badge .reply-badge {
+  background-color: #F5D76E; }
+
+.list-group .list-group-item {
+  background-color: rgba(108, 122, 137, 0.4);
+  border-color: rgba(228, 241, 254, 0.7); }
+
+.list-group a {
+  color: #42dca3; }
+
+.comment-box {
+  width: 100%;
+  text-align: left; }
+
+.comment-box:hover {
+  color: #ECF0F1;
+  background-color: #42dca3; }
+
+.image-preview {
+  display: inline-block;
+  position: relative; }
+  .image-preview .inset {
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    opacity: .7; }
+  .image-preview .glyphicon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    opacity: .5;
+    color: white; }
+  .image-preview img {
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+    border: 3px solid rgba(255, 255, 255, 0.5); }
+  .image-preview video {
+    height: 200px;
+    width: 200px;
+    vertical-align: middle;
+    background-color: black;
+    border: 3px solid rgba(149, 165, 165, 0.5); }
+
+.black {
+  color: black; }
+
+body {
+  background-color: #22313F;
+  color: #42dca3; }
+
+.topic {
+  text-align: center; }
+  .topic .image-preview {
+    animation: fadein .65s ease-out; }
+
+@keyframes fadein {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1.0; } }
+
+.list-group .topic-item {
+  color: #f5f5f5; }
