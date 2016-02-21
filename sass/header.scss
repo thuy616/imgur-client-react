@@ -1,0 +1,29 @@
+.header {
+  .active {
+    font-weight: 900;
+  }
+}
+
+.navbar-default {
+  background-color: rgba(108, 122, 137, 0.3);
+  border-color: rgba(108, 122, 137, 0.9);
+
+}
+
+.navbar-default .navbar-brand {
+  color: #42dca3;
+}
+
+.navbar-default .navbar-brand:hover{
+  color: #ECF0F1;
+  background-color: #42dca3;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #42dca3;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+  color: #ECF0F1;
+  background-color: #42dca3;
+}

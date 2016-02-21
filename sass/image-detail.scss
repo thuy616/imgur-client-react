@@ -1,0 +1,21 @@
+.image-detail {
+  .panel-body {
+    text-align: center;
+    background-color: black;
+  }
+
+  img, video {
+    max-width: 100%;
+  }
+
+  .badge {
+    background-color: #19B5FE;
+  }
+}
+
+.list-group {
+  .list-group-item {
+    background-color: rgba(108, 122, 137, .4);
+    border-color: rgba(228, 241, 254, .7);
+  }
+}
