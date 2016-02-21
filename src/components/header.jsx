@@ -37,9 +37,7 @@ module.exports = React.createClass({
     </nav>
   },
   renderTopics: function() {
-    console.log("renderTopics");
     return this.state.topics.slice(0, 4).map(function(topic){
-      console.log(topic);
       return <li key={topic.id}>
         <Link activeClassName="active" to={"topics/" + topic.id}>
           {topic.name}
@@ -48,9 +46,7 @@ module.exports = React.createClass({
     });
   },
   renderDropDown: function() {
-    console.log("renderDropdown");
     return this.state.topics.slice(5).map(function(topic){
-      console.log(topic);
       return <ul className="dropdown-list">
                 <li className="dropdown-item" key="{topic.id}">
                 <Link activeClassName="active" to={"topics/" + topic.id}>
@@ -59,7 +55,6 @@ module.exports = React.createClass({
               </li>
           </ul>
     });
-
   },
   onChange: function(event, topics) {
     this.setState({

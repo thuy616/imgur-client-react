@@ -1,18 +1,20 @@
 var React = require('react');
+var ReactBootstrap = require('react-bootstrap');
+var ListGroup = ReactBootstrap.ListGroup;
+var Comment = require('./comment');
 
 module.exports = React.createClass({
   render: function(){
-    return <ul className="list-group">
+    return <ListGroup>
       {this.renderComments()}
-    </ul>
+    </ListGroup>
   },
   renderComments: function() {
     return this.props.comments.slice(0, 20).map(function(comment){
-      return <li className="list-group-item comment-box" key={comment.id}>
-        <span className="badge">{comment.ups}</span>
-        <h4>{comment.author}</h4>
-        {comment.comment}
-      </li>
-    })
+      return <Comment key={comment.id} {...comment}></Comment>
+    });
+  },
+  handleCommentClick: function(event) {
+    console.log("clicked");
   }
 });

@@ -11,6 +11,11 @@
   .badge {
     background-color: #19B5FE;
   }
+
+  .badge .reply-badge {
+    background-color: #F5D76E;
+  }
+
 }
 
 .list-group {
@@ -18,4 +23,20 @@
     background-color: rgba(108, 122, 137, .4);
     border-color: rgba(228, 241, 254, .7);
   }
+}
+
+.list-group {
+  a {
+    color: #42dca3;
+  }
+}
+
+.comment-box {
+  width: 100%;
+  text-align: left;
+}
+
+.comment-box:hover {
+  color: #ECF0F1;
+  background-color: #42dca3;
 }
